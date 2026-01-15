@@ -2,10 +2,12 @@
 
 Azure Infrastructure Engineer at UK Home Office | IaC & DevOps
 
-I publish **repo-based incident labs** so you can build real debugging instincts by fixing realistic Azure/Terraform failures
+I publish **repo-based incident labs** so you can sharpen real debugging instincts by spotting and fixing realistic Azure/Terraform misconfigurations — not just reading tutorials.
 
 **Weekly loop:**  
-Production-style ticket → broken repo → you clone/deploy/investigate → you ship a fix → compare with my walkthrough.
+Production-style ticket → intentionally broken repo → clone → investigate → identify gaps → fix → compare with my walkthrough.
+
+No deployment required — simply run the Python HCL2 guardrail script to validate and surface unmet conditions.
 
 ### Start Here
 - **Week 1:** [week-1](https://github.com/la-moss/week-1)
@@ -17,16 +19,18 @@ Production-style ticket → broken repo → you clone/deploy/investigate → you
 
 ### Generate Your Own Lab (AI-Powered)
 Need a fresh production-style ticket + broken repo on demand?  
-Supports any cloud provider and IaC tool (Azure, AWS, GCP, Terraform, etc.).
-
+Supports any cloud provider and IaC tool (Azure, AWS, GCP, Terraform, etc.).  
 ➡️ **InfraTickets (Custom GPT):** [Generate incident lab](https://chatgpt.com/g/g-69087d89f1288191bc986d18be68aff8-iac-incident-lab-repo-ticket-generator)
+
 ### What You'll Practice
-- **Networking:** DNS, routes, NSGs, private endpoints, hub/spoke
-- **IAM:** RBAC, least privilege, break-glass patterns
-- **Resilience:** DR/failover, blast-radius control
-- **Operational rigour:** logs, diffs, verification, change discipline
-- **Governance:** policy-as-code, CI guardrails, drift detection
-- **Cost awareness:** spending signals + pragmatic trade-offs
+- Detecting & remediating networking misconfigurations (DNS, routes, NSGs, private endpoints, hub/spoke)
+- Enforcing IAM controls (RBAC, least privilege, break-glass patterns)
+- Validating DR/failover readiness + blast-radius limits
+- Strengthening IaC guardrails (linting, policy checks, “plan isn’t proof”)
+- Identifying Kubernetes (AKS) compliance & security gaps
+- Operational rigour: logs, diffs, verification, change discipline
+- Governance: policy-as-code, CI guardrails, drift detection
+- Cost awareness: spending signals + pragmatic trade-offs
 
 ### Stay Connected
 New incident lab every Monday + walkthroughs on LinkedIn:  
